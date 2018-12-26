@@ -102,7 +102,7 @@ class Jaeger implements Tracer{
             }
         }else{
             $newSpan = new \Jaeger\SpanContext($this->generateId(),
-                $parentSpan->spanId, $parentSpan->flags, null, 0);
+                $parentSpan->spanId, $parentSpan->flags, $parentSpan->baggage, 0);
             $newSpan->traceIdLow = $parentSpan->traceIdLow;
             if($parentSpan->traceIdHigh){
                 $newSpan->traceIdHigh = $parentSpan->traceIdHigh;

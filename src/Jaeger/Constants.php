@@ -3,6 +3,8 @@ namespace Jaeger\Constants;
 
 const Tracer_State_Header_Name = 'uber-trace-id';
 
+const Tracer_State_Header_Name_Title = 'Uber-Trace-Id';
+
 const Jaeger_Baggage_Header = 'jaeger-baggage';
 
 const Trace_Baggage_Header_Prefix = 'uberctx-';
